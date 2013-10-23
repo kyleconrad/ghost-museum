@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icon-144.png" />
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="touch-icon-144.png" />
 
-    <link rel="icon" href="fav16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="{{@blog.url}}/fav16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="fav32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="fav48.png" sizes="48x48" type="image/png">
     <link rel="icon" href="fav64.png" sizes="64x64" type="image/png">
@@ -25,28 +25,28 @@
     <meta name="msapplication-TileColor" content="#D83434">
     <meta name="msapplication-TileImage" content="fav144.png">
 
-    <link href="STYLE/style.css" rel="stylesheet" type="text/css" />
+    <link href="{{@blog.url}}/STYLE/style.css" rel="stylesheet" type="text/css" />
 
-    <script type="text/javascript" src="JS/headload.js"></script>
+    <script type="text/javascript" src="{{@blog.url}}/JS/headload.js"></script>
     <script>
         head.js("http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-            .js("JS/fitvids.js");
+            .js("{{@blog.url}}/JS/fitvids.js");
     </script>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]>
-		<script type="text/javascript" src="JS/html5shiv.js"></script>
-        <script type="text/javascript" src="JS/modernizr.js"></script>
-        <script type="text/javascript" src="JS/selectivizr.js"></script>
+		<script type="text/javascript" src="{{@blog.url}}/JS/html5shiv.js"></script>
+        <script type="text/javascript" src="{{@blog.url}}/JS/modernizr.js"></script>
+        <script type="text/javascript" src="{{@blog.url}}/JS/selectivizr.js"></script>
 	<![endif]-->
 </head>
 
 <body>
 
 <section id="logo-header" class="padded">
-    <a href="index.html">
-        <img src="IMG/logo.svg">
+<a href="{{@blog.url}}">
+      <img src="{{@blog.logo}}">
     </a>
 </section>
 
@@ -107,7 +107,7 @@
     </ul>
 
     <span class="footer-text">
-        All content &copy; 2013 <a href="index.html">Museum</a> &bull; All rights reserved.
+      All content &copy; 2013 <a href="{{@blog.url}}">{{@blog.title}}</a> &bull; All rights reserved.
     </span>
 </footer>
 
