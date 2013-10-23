@@ -5,19 +5,11 @@
 	<h2><a href="{{url}}">{{title}}</a></h2>
 	<span class="post-info">{{date format="MMMM D, YYYY"}} / {{author}}</span>
         </header>
-
-        <img src="http://lib.store.yahoo.net/lib/madisonartshop/most-famous-paintings-2.jpg">
-
-        <p><strong>"Famous Painting"</strong></p>
-        <p>Artist Name</p>
-        <p><em>Mixed Media on Canvas</em></p>
-        <p>1876</p>
+      {{{content}}}
     </article>
 
     {{/foreach}}
     <section id="pagination" class="clearfix">
-        <a href="#" class="left-page">Previous Page</a>
-
-        <a href="#" class="right-page">Next Page</a>
+	  {{pagination}}
     </section>
 </section>
