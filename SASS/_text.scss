@@ -85,8 +85,8 @@ em {
 	text-align: center;
 }
 
-.left-page,
-.right-page {
+.newer-posts,
+.older-posts {
 	font-family: 'Inconsolata', sans-serif;
 	text-transform: uppercase;
 	@include rem(font-size,0.875rem);

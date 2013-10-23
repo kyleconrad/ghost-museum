@@ -4,11 +4,15 @@
 	width: 100%;
 	background: darken(white,5%);
 
-	.left-page {
-		float: left;
-	}
-
-	.right-page {
+	.older-posts {
 		float: right;
 	}
+
+	.newer-posts {
+		float: left;
+	}
+	
+	.page-number{
+          display:none;
+        }
 }
