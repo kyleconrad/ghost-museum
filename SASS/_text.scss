@@ -1,0 +1,122 @@
+/* TEXT STYLES */
+h1,
+h2 {
+	font-family: 'Inconsolata', sans-serif;
+	text-transform: uppercase;
+	@include rem(font-size,0.85rem);
+	font-weight: 700;
+
+	a {
+		text-decoration: none;
+		color: lighten(black,10%);
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+p {
+	font-family: 'Inconsolata', sans-serif;
+	font-weight: 400;
+	@include rem(font-size,0.85rem);
+	color: lighten(black,20%);
+	line-height: 1.1;
+	margin-bottom: 0;
+	text-align: left;
+
+	img + &,
+	.fluid-width-video-wrapper + &,
+	iframe + & {
+		@include rem(margin-top,1.25rem);
+	}
+
+	a {
+		color: lighten(black,20%);
+		text-decoration: underline;
+
+		&:hover {
+			color: lighten(black,10%);
+		}
+	}
+}
+
+strong {
+	font-weight: 700;
+}
+em {
+	font-style: italic;
+}
+
+.post-info {
+	font-family: 'Inconsolata', sans-serif;
+	text-transform: uppercase;
+	@include rem(font-size,0.75rem);
+	font-weight: 700;
+	color: lighten(black,60%);
+}
+
+.author-name {
+	display: block;
+	font-family: 'Inconsolata', sans-serif;
+	text-transform: uppercase;
+	@include rem(font-size,0.875rem);
+	font-weight: 700;
+	color: lighten(black,20%);
+	@include rem(margin-bottom,0.25rem);
+}
+.author-bio {
+	display: block;
+	font-family: 'Inconsolata', sans-serif;
+	font-weight: 400;
+	@include rem(font-size,0.75rem);
+	line-height: 1.2;
+	color: lighten(black,20%);
+}
+
+.share-text {
+	font-family: 'Inconsolata', sans-serif;
+	font-weight: 700;
+	@include rem(font-size,0.875rem);
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+}
+
+.left-page,
+.right-page {
+	font-family: 'Inconsolata', sans-serif;
+	text-transform: uppercase;
+	@include rem(font-size,0.875rem);
+	font-weight: 700;
+	color: lighten(black,20%);
+	text-decoration: none;
+	display: block;
+	border: 3px solid lighten(black,20%);
+	padding: 10px 13px;
+
+	&:hover {
+		color: white;
+		-webkit-font-smoothing: antialiased;
+		background: lighten(black,20%);
+	}
+}
+
+.footer-text {
+	font-family: 'Inconsolata', sans-serif;
+	text-transform: uppercase;
+	@include rem(font-size,0.75rem);
+	font-weight: 700;
+	color: darken(white,40%);
+
+	a {
+		text-decoration: none;
+		color: lighten(black,25%);
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

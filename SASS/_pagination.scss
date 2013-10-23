@@ -1,0 +1,14 @@
+/* PAGINATION */
+#pagination {
+	@include rem(padding-top,2rem);
+	width: 100%;
+	background: darken(white,5%);
+
+	.left-page {
+		float: left;
+	}
+
+	.right-page {
+		float: right;
+	}
+}

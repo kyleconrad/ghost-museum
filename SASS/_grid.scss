@@ -1,0 +1,37 @@
+/* GRID */
+header, nav, section, div, article, footer {
+	display: block;
+	position: relative;
+}
+
+.padded {
+	padding-left: 16%;
+	padding-right: 16%;
+
+	@include breakpoint(landscape) {
+		padding-left: 12%;
+		padding-right: 12%;
+	}
+	@include breakpoint(portrait) {
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	@include breakpoint(mobile) {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+}
+
+header {
+	@include rem(margin-bottom,1.25rem);
+}
+
+#post-container {
+	background: darken(white,5%);
+	padding-top: 11%;
+	padding-bottom: 5%;
+
+	@include breakpoint(mobile) {
+		padding-top: 27%;
+	}
+}

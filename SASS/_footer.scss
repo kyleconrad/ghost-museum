@@ -1,0 +1,39 @@
+/* FOOTER */
+footer {
+	@include rem(padding-top,1.5rem);
+	@include rem(padding-bottom,2.5rem);
+	text-align: center;
+
+	#social-links {
+		width: 100%;
+		text-align: center;
+		@include rem(margin-bottom,1.25rem);
+
+		li {
+			display: inline-block;
+			@include rem(padding-left,0.25rem);
+			@include rem(padding-right,0.25rem);
+			@include rem(padding-bottom,0.25rem);
+
+			a {
+				text-decoration: none;
+				display: block;
+				@include rem(width,1.5rem);
+				@include rem(height,1.5rem);
+				background: darken(white,22%);
+				color: lighten(black,10%);
+				text-align: center;
+				@include rem(font-size,0.75rem);
+				@include rem(line-height,1.5rem);
+				@include opacity(0.5);
+				@include transition(0.15s);
+
+				&:hover {
+					@include opacity(1);
+					background: lighten(black,10%);
+					color: white;
+				}
+			}
+		}
+	}
+}
