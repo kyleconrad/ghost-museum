@@ -12,6 +12,7 @@
 
 	.post-footer {
 		border-top: 1px solid darken(white,10%);
+		width:100%;
 		@include rem(padding-top,1.5rem);
 		@include rem(margin-top,0.25rem);
 		text-align: left;
