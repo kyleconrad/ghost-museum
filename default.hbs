@@ -25,121 +25,34 @@
     <meta name="msapplication-TileColor" content="#D83434">
     <meta name="msapplication-TileImage" content="fav144.png">
 
-    <link href="STYLE/style.css" rel="stylesheet" type="text/css" />
+    <link href="{{@blog.url}}/STYLE/style.css" rel="stylesheet" type="text/css" />
 
-    <script type="text/javascript" src="JS/headload.js"></script>
+    <script type="text/javascript" src="{{@blog.url}}/JS/headload.js"></script>
     <script>
         head.js("http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-            .js("JS/fitvids.js");
+            .js("{{@blog.url}}/JS/fitvids.js");
     </script>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]>
-		<script type="text/javascript" src="JS/html5shiv.js"></script>
-        <script type="text/javascript" src="JS/modernizr.js"></script>
-        <script type="text/javascript" src="JS/selectivizr.js"></script>
+		<script type="text/javascript" src="{{@blog.url}}/JS/html5shiv.js"></script>
+        <script type="text/javascript" src="{{@blog.url}}/JS/modernizr.js"></script>
+        <script type="text/javascript" src="{{@blog.url}}/JS/selectivizr.js"></script>
 	<![endif]-->
 </head>
 
 <body>
 
 <section id="logo-header" class="padded">
-    <a href="index.html">
-        <img src="IMG/logo.svg">
+<a href="{{@blog.url}}">
+      <img src="{{@blog.logo}}">
     </a>
 </section>
 
 <section id="post-container" class="padded">
-    <article class="single-post">
-        <header>
-            <h2><a href="post.html">This is a piece of art and an article</a></h2>
-            <span class="post-info">October 18, 2013 / Jesse Shawl</span>
-        </header>
+  {{{body}}}
 
-        <img src="http://lib.store.yahoo.net/lib/madisonartshop/most-famous-paintings-2.jpg">
-
-        <p><strong>"Famous Painting"</strong></p>
-        <p>Artist Name</p>
-        <p><em>Mixed Media on Canvas</em></p>
-        <p>1876</p>
-    </article>
-
-    <article class="single-post">
-        <header>
-            <h2><a href="post.html">This is a piece of art and an article</a></h2>
-            <span class="post-info">October 18, 2013 / Jesse Shawl</span>
-        </header>
-
-        <img src="http://www.wallsave.com/wallpapers/1366x768/famous-paintings/811799/famous-paintings-sunday-afternoon-hd-widescreen-high-definition-811799.jpg">
-
-        <p><strong>"Famous Painting"</strong></p>
-        <p>Artist Name</p>
-        <p><em>Mixed Media on Canvas</em></p>
-        <p>1876</p>
-    </article>
-
-    <article class="single-post">
-        <header>
-            <h2><a href="post.html">This is a piece of art and an article</a></h2>
-            <span class="post-info">October 18, 2013 / Jesse Shawl</span>
-        </header>
-
-        <img src="http://wallcrazy.com/wp-content/uploads/2013/07/Famous-Artwork-Wallpaper-Downloads.jpg">
-
-        <p><strong>"Famous Painting"</strong></p>
-        <p>Artist Name</p>
-        <p><em>Mixed Media on Canvas</em></p>
-        <p>1876</p>
-    </article>
-
-    <article class="single-post">
-        <header>
-            <h2><a href="post.html">This is a piece of art and an article</a></h2>
-            <span class="post-info">October 18, 2013 / Jesse Shawl</span>
-        </header>
-
-        <img src="http://www.rowan.edu/open/philosop/clowney/Aesthetics/pollack9.jpg">
-
-        <p><strong>"Famous Painting"</strong></p>
-        <p>Artist Name</p>
-        <p><em>Mixed Media on Canvas</em></p>
-        <p>1876</p>
-    </article>
-
-    <article class="single-post">
-        <header>
-            <h2><a href="post.html">This is a video and an article</a></h2>
-            <span class="post-info">October 18, 2013 / Jesse Shawl</span>
-        </header>
-
-        <iframe src="//player.vimeo.com/video/26278283?title=0&amp;byline=0&amp;portrait=0&amp;color=f0ede6" width="1024" height="435" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-        <p><strong>"Famous Art Video"</strong></p>
-        <p>Artist Name</p>
-        <p><em>Video Installation</em></p>
-        <p>2012</p>
-    </article>
-
-    <article class="single-post">
-        <header>
-            <h2><a href="post.html">This is a song and an article</a></h2>
-            <span class="post-info">October 18, 2013 / Jesse Shawl</span>
-        </header>
-
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/21199445"></iframe>
-
-        <p><strong>"Famous Art Song"</strong></p>
-        <p>Artist Name</p>
-        <p>2013</p>
-    </article>
-
-    <section id="pagination" class="clearfix">
-        <a href="#" class="left-page">Previous Page</a>
-
-        <a href="#" class="right-page">Next Page</a>
-    </section>
-</section>
 
 <footer class="padded">
     <ul id="social-links">
@@ -194,16 +107,14 @@
     </ul>
 
     <span class="footer-text">
-        All content &copy; 2013 <a href="index.html">Museum</a> &bull; All rights reserved.
+      All content &copy; 2013 <a href="{{@blog.url}}">{{@blog.title}}</a> &bull; All rights reserved.
     </span>
 </footer>
-
 
 <script type="text/javascript">
 	head.ready(function(){
         // RESPONSIVE VIDEOS
         $('div, section, article').fitVids();
-
         // REPLACE SVG WITH PNG IF NO SUPPORT
         if(!Modernizr.svg) {
             $('img[src*="svg"]').attr('src', function() {

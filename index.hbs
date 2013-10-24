@@ -1,0 +1,15 @@
+{{!< default}}
+  {{#foreach posts}}
+    <article class="single-post">
+        <header>
+	<h2><a href="{{url}}">{{title}}</a></h2>
+	<span class="post-info">{{date format="MMMM D, YYYY"}} / {{author}}</span>
+        </header>
+      {{{content}}}
+    </article>
+
+    {{/foreach}}
+    <section id="pagination" class="clearfix">
+	  {{pagination}}
+    </section>
+</section>

@@ -1,0 +1,35 @@
+{{!< default}}
+
+{{#post}}
+    <article class="single-post">
+        <header>
+	  <h1>{{title}}</h1>
+	  <span class="post-info">{{date format="MMMM D, YYYY"}}</span>
+        </header>
+	{{{content}}}
+        <div class="post-footer clearfix">
+            <div class="author-text">
+	      <span class="author-name">{{author}}</span>
+	      <span class="author-bio">{{author.bio}}</span>
+            </div>
+
+            <div class="share-box">
+                <span class="share-text">Share Post</span>
+                <ul id="share-icons">
+                    <li>
+                        <a href="#" class="icon-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-googleplus"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-pinterest"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    {{/post}}
