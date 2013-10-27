@@ -30,14 +30,15 @@
     <script type="text/javascript" src="{{@blog.url}}/JS/headload.js"></script>
     <script>
         head.js("http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-            .js("{{@blog.url}}/JS/fitvids.js");
+            .js("{{@blog.url}}/JS/fitvids.js")
+            .js("{{@blog.url}}/JS/scripts.js");
     </script>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
+    <script type="text/javascript" src="{{@blog.url}}/JS/modernizr.js"></script>
     <!--[if lt IE 9]>
 		<script type="text/javascript" src="{{@blog.url}}/JS/html5shiv.js"></script>
-        <script type="text/javascript" src="{{@blog.url}}/JS/modernizr.js"></script>
         <script type="text/javascript" src="{{@blog.url}}/JS/selectivizr.js"></script>
 	<![endif]-->
 </head>
@@ -46,14 +47,13 @@
 
 <section id="logo-header" class="padded">
 <a href="{{@blog.url}}">
-      <img src="{{@blog.logo}}">
+      <img class='js-blog-logo' src="{{@blog.logo}}">
     </a>
 </section>
 
 <section id="post-container" class="padded">
   {{{body}}}
-
-
+</section>
 <footer class="padded">
     <ul id="social-links">
         <li>
@@ -125,7 +125,7 @@
 </script>
 
 <!--[if lt IE 9]>
-	<script type="text/javascript" src="JS/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="{{@blog.url}}JS/css3-mediaqueries.js"></script>
 <![endif]-->
 
 </body>
