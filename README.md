@@ -1,7 +1,5 @@
 # Museum
 
-a art/photo/video/music blog type theme for Ghost.
-
 Museum is a simple, beautiful, fully responsive & retina-ready theme
 for use in your Ghost blog. Designed with a focus on imagery, photos,
 videos, and music, Museum is perfect for an artist or image blogger
