@@ -17,5 +17,5 @@ your Museum blog to the world.
 
 ##Purchase
 
-Now available for purchase! Only 15$ - https://sellfy.com/p/iGEp/
+Now available for purchase! Only $15 - https://sellfy.com/p/iGEp/
 
